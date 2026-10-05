@@ -1,0 +1,31 @@
+===== TERRAFORM VERSION =====
+Terraform v1.15.3
+on windows_amd64
++ provider registry.terraform.io/kreuzwerker/docker v3.6.2
+
+Your version of Terraform is out of date! The latest version
+is 1.16.5. You can update by downloading from https://developer.hashicorp.com/terraform/install
+
+===== TERRAFORM VALIDATE =====
+[32m[1mSuccess![0m The configuration is valid.
+[0m
+
+===== TERRAFORM STATE LIST =====
+docker_container.nginx
+docker_image.nginx
+
+===== DOCKER CONTAINER =====
+CONTAINER ID   IMAGE          COMMAND                  CREATED         STATUS         PORTS                  NAMES
+bfd4e21a8907   608a100c7165   "/docker-entrypoint.…"   4 minutes ago   Up 4 minutes   0.0.0.0:8081->80/tcp   terraform-nginx
+
+===== NGINX TEST =====
+HTTP/1.1 200 OK
+Server: nginx/1.31.1
+Date: Mon, 05 Oct 2026 06:34:21 GMT
+Content-Type: text/html
+Content-Length: 896
+Last-Modified: Fri, 22 May 2026 12:50:47 GMT
+Connection: keep-alive
+ETag: "6a105127-380"
+Accept-Ranges: bytes
+
